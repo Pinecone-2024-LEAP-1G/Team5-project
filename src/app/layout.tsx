@@ -1,5 +1,6 @@
 
 import "./globals.css";
+
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
@@ -11,9 +12,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className=" font-Inter font-normal text-base max-w-[1440px] mx-auto"
+        className=" font-Inter font-normal text-base max-w-[1440p] mx-auto"
       >
-        <Header/>
+        <div className="bg-black">
+        <Header />
+        </div>
         {children}
         <Footer/>
       </body>
