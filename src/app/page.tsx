@@ -2,6 +2,7 @@ import { Banner } from "@/components/BannerHero";
 import { HeroCard } from "@/components/HeroCard";
 import { MainContent } from "@/components/MainContent";
 import { FooterCard } from "@/components/FooterCard";
+import { useState } from "react";
 
 const Home =() => {
   return (
@@ -14,3 +15,4 @@ const Home =() => {
   );
 }
 export default Home
+

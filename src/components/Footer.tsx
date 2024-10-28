@@ -16,11 +16,11 @@ export const Footer = () => {
                   </div>
              </div>
              <div className="p">
-                <img className=" max-w-[1440px] mx-auto mt-[50px]" src="icons/bottomLine.svg"/>
+                <img className=" max-w-[1440px] mx-auto mt-[50px]" src="/icons/bottomLine.svg"/>
              </div>
              <div className="flex justify-between pt-[50px]">
                 <p className="text-white">© 2024 Team-5 MN</p>
-                <img src="icons/frame.svg"/>
+                <img src="/icons/frame.svg"/>
              </div>
          </div>
         </div>
