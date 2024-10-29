@@ -11,6 +11,7 @@
     "prefix": ""
   },
   "aliases": {
+    "input-otp": "^1.2.4",
     "components": "@/components",
     "utils": "@/lib/utils",
     "ui": "@/components/ui",

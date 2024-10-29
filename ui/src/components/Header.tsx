@@ -1,18 +1,28 @@
+<<<<<<< HEAD
 'use client'
 
 import { Button } from "@/components/ui/button";
 import { Link } from "lucide-react";
+=======
+import { Button } from "./ui/button";
+>>>>>>> 4dd35f7 (move files)
 
 export const Header = () => {
   return (
     <div className=" mx-auto flex max-w-[1240px] h-[80px] items-center justify-between ">
       <div className="flex w-200 h-[28px] items-center ">
         <img className="w-[129px] h-[28px]" src="/icons/ecomlog.svg" />
+<<<<<<< HEAD
         
         <p className="text-white w-[67px] h-[28px] ml-[40px] cursor-pointer">
           Ангилал
         </p>
         
+=======
+        <p className="text-white w-[67px] h-[28px] ml-[40px] cursor-pointer">
+          Ангилал
+        </p>
+>>>>>>> 4dd35f7 (move files)
       </div>
       <div className="flex ">
         <img className="" src="/icons/Search.svg " />
