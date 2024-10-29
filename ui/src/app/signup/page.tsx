@@ -7,18 +7,31 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setError("");
 
     if (password !== confirmPassword) {
-      alert("Нууц үг давтах нь таарахгүй байна.");
+      setError("Нууц үг давтах нь таарахгүй байна.");
+      setLoading(false);
+      return;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      setError("Имэйл хаяг нь хүчинтэй биш байна.");
       setLoading(false);
       return;
     }
 
     console.log({ email, name, password });
+
+    setTimeout(() => {
+      setLoading(false);
+    });
   };
 
   return (
@@ -63,6 +76,8 @@ const SignUp = () => {
             required
           />
 
+          {error && <p className="text-red-600">{error}</p>}
+
           <div className="flex flex-col pl-4">
             <ul className="list-disc flex flex-col gap-1">
               <li className="text-[#71717A]">Том үсэг орсон байх</li>
@@ -91,4 +106,5 @@ const SignUp = () => {
     </div>
   );
 };
+
 export default SignUp;
