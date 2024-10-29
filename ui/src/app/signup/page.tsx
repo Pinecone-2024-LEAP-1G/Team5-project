@@ -20,13 +20,6 @@ const SignUp = () => {
       return;
     }
 
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
-      setError("Имэйл хаяг нь хүчинтэй биш байна.");
-      setLoading(false);
-      return;
-    }
-
     console.log({ email, name, password });
 
     setTimeout(() => {
@@ -89,11 +82,8 @@ const SignUp = () => {
           <div className="flex flex-col gap-4">
             <button
               type="submit"
-              className={`bg-blue-600 rounded-[18px] w-full h-[36px] text-[#FAFAFA] ${
-                loading ? "opacity-50 cursor-not-allowed" : ""
-              }`}
-              disabled={loading}>
-              {loading ? "Үүсгэж байна..." : "Үүсгэх"}
+              className="bg-blue-600 rounded-[18px] w-full h-[36px] text-[#FAFAFA] ">
+              Үүсгэх
             </button>
           </div>
         </form>
