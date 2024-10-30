@@ -84,7 +84,7 @@ const SignUp = () => {
             <li className="text-[#71717A]">Тэмдэгт орсон байх</li>
           </ul>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-3">
           <button
             type="submit"
             className="bg-blue-600 rounded-[18px] w-full h-[36px] text-[#FAFAFA] ">
