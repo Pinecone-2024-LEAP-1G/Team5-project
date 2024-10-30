@@ -26,7 +26,7 @@ const SignUp = () => {
       setLoading(false);
     });
   };
-
+  if (loading) return null;
   return (
     <div className="pt-[104px] pb-[374px] flex justify-center items-center">
       <div className="flex-col flex gap-12 w-[334px]">
@@ -82,14 +82,16 @@ const SignUp = () => {
           <div className="flex flex-col gap-4">
             <button
               type="submit"
-              className="bg-blue-600 rounded-[18px] w-full h-[36px] text-[#FAFAFA] ">
+              className="bg-blue-600 rounded-[18px] w-full h-[36px] text-[#FAFAFA] "
+            >
               Үүсгэх
             </button>
           </div>
         </form>
         <button
           type="button"
-          className="border-solid border border-blue-600 rounded-[18px] w-full h-[36px] text-[#2563EB]">
+          className="border-solid border border-blue-600 rounded-[18px] w-full h-[36px] text-[#2563EB]"
+        >
           Нэвтрэх
         </button>
       </div>
