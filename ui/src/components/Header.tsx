@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export const Header = () => {
   return (
@@ -24,16 +25,14 @@ export const Header = () => {
         <img className="px-3" src="/icons/Heart.svg" />
         <img className="px-3" src="/icons/Shop.svg" />
         <Button
-          className="rounded-full mx-3 border-[#2563EB] text-white hover:bg-[#2563EB]  "
-          variant="outline"
-        >
-          Бүртгүүлэх
+          className="rounded-full mx-3 border-[#2563EB] text-white hover:bg-[#2563EB] "
+          variant="outline">
+          <Link href={"signup"}>Бүртгүүлэх</Link>
         </Button>
         <Button
           className="rounded-full mx-3 bg-[#2563EB] text-white hover:border-[#2563EB] "
-          variant="default"
-        >
-          Нэвтрэх
+          variant="default">
+          <Link href={"signin"}> Нэвтрэх</Link>
         </Button>
       </div>
     </div>
