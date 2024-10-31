@@ -5,6 +5,12 @@ import { Request, Response } from "express";
 export const CreateUser = async (req: Request, res: Response) => {
   const { email, firstName, password, phoneNumber, role } = req.body;
   try {
+    const userExist = await UserModel.findOne({ email });
+
+    if (userExist) {
+      res.status(404).json({ message: "User already exist" });
+    }
+
     const user = await new UserModel({
       email: email,
       firstName: firstName,
