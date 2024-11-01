@@ -1,5 +1,3 @@
 export const BannerCard = () => {
-    return<div>
-
-    </div>
-}
+  return <div></div>;
+};
