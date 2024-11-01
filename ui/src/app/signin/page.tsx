@@ -54,7 +54,8 @@ export default function Signin() {
           <div className="flex flex-col gap-4">
             <button
               type="submit"
-              className="bg-blue-600 rounded-[18px] w-full h-[36px] text-[#FAFAFA]">
+              className="bg-blue-600 rounded-[18px] w-full h-[36px] text-[#FAFAFA]"
+            >
               Нэвтрэх
             </button>
             <p className="text-sm text-[#71717A] text-center">
@@ -66,7 +67,8 @@ export default function Signin() {
         <button
           onClick={handleSubmit}
           type="button"
-          className="border-solid border border-blue-600 rounded-[18px] w-full h-[36px] text-[#2563EB]">
+          className="border-solid border border-blue-600 rounded-[18px] w-full h-[36px] text-[#2563EB]"
+        >
           Бүртгүүлэх
         </button>
       </div>
